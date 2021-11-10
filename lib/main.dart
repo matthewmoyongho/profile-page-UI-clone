@@ -46,9 +46,10 @@ class UserProfile extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Material(
-                    borderRadius: BorderRadius.circular(10),
-                    elevation: 2,
+                  Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        side: BorderSide(width: 1, color: Colors.black26)),
                     child: ListTile(
                       leading: CircleAvatar(
                         backgroundImage: AssetImage('images/profile.jpg'),

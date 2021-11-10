@@ -13,9 +13,13 @@ class ProfilePageTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Material(
-          borderRadius: BorderRadius.circular(10),
-          elevation: 2,
+        Card(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+              side: BorderSide(
+                width: 1,
+                color: Colors.black26,
+              )),
           child: ListTile(
             leading: Icon(
               leading,
@@ -29,7 +33,7 @@ class ProfilePageTile extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 25,
+          height: 15,
         ),
       ],
     );
